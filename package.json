@@ -8,7 +8,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue-eslint-parser": "^7.11.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -19,7 +20,7 @@
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^7.19.1",
+    "eslint-plugin-vue": "7.18.0",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4",
     "vite": "^2.6.4",

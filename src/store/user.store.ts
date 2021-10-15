@@ -1,11 +1,10 @@
 interface User {
-    name: string;
-    age: number;
+  username: string
+  age: number
 }
 
-var fish: User = {
-    name: 'vb',
-    age: 25,
+const fish: User = {
+  username: 'vb',
+  age: 18
 }
-const a = 1;
-const b = 3
+console.log(fish.username)

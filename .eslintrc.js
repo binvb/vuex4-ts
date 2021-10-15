@@ -11,6 +11,7 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    // eslint-config-prettier 的缩写
     'prettier'
   ],
   parserOptions: {
@@ -18,13 +19,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-      modules: true
-    },
-    vueFeatures: {
-      filter: true,
-      interpolationAsNonHTML: false,
-      styleCSSVariableInjection: true
+      jsx: true
     }
   },
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
@@ -34,20 +29,20 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        singleQuote: true,
+        tabWidth: 2,
         semi: false,
-        parser: 'flow',
+        singleQuote: true,
         trailingComma: 'none',
-        arrowParens: 'avoid',
-        overrides: {
-          files: ['*.vue'],
-          options: {
-            parser: 'vue'
-          }
-        }
+        endOfLine: auto
       }
     ],
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-explicit-any': 'off'
+  },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly'
   }
 }
